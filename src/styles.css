@@ -16,5 +16,8 @@ body {
   /*
    * CSS image reference example.
    */
-  background-image: url('./images/bg-pattern.png');
+  /* background-image: url('./images/bg-pattern.png'); */
+}
+.background-black {
+  background-color: #111;
 }
