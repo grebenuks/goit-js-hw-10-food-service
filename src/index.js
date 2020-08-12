@@ -22,12 +22,16 @@ refs.switchDiv.addEventListener('click', changeTheme);
 function changeTheme() {
   if (refs.switchInput.checked) {
     darkTheme();
-    localStorage.setItem('Theme:', Theme.DARK);
+    sendData('Theme:', Theme.DARK);
   } else {
     lightTheme();
-    localStorage.setItem('Theme:', Theme.LIGHT);
+    sendData('Theme:', Theme.LIGHT);
   }
 }
+
+let sendData = (key, data) => {
+  localStorage.setItem(key, data);
+};
 
 function darkTheme() {
   refs.switchInput.checked = true;
