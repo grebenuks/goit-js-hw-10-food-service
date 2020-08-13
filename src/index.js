@@ -54,4 +54,3 @@ function getTheme() {
     darkTheme();
   }
 }
-ssss;
